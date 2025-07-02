@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/idol-gallery%20/static/css/main.31d6cfe0.css",
-    "main.js": "/idol-gallery%20/static/js/main.7c53bfe2.js",
+    "main.js": "/idol-gallery%20/static/js/main.3939d5a7.js",
     "index.html": "/idol-gallery%20/index.html",
-    "main.7c53bfe2.js.map": "/idol-gallery%20/static/js/main.7c53bfe2.js.map"
+    "main.3939d5a7.js.map": "/idol-gallery%20/static/js/main.3939d5a7.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.7c53bfe2.js"
+    "static/js/main.3939d5a7.js"
   ]
 }
