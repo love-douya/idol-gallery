@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
 
 // 替换为你的 Supabase 配置
-const supabaseUrl = 'https://your-supabase-project-url.supabase.co ';
-const supabaseAnonKey = 'your-anon-key';
+const supabaseUrl = 'https://hppsjmveutqmdsuvgrvb.supabase.co';
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhwcHNqbXZldXRxbWRzdXZncnZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEzMDYzNDksImV4cCI6MjA2Njg4MjM0OX0.-tl4hkGnALnLT0UlT7B1ImzMoiM17OFJYHzECKrR8zM';
 
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
@@ -92,13 +92,23 @@ const App = () => {
     };
   }, [selectedDate]);
 
-  const addDate = async () => {
-    const newDate = prompt('请输入新日期 (格式: YYYY-MM-DD)');
-    if (newDate && !dates.includes(newDate)) {
+const addDate = async () => {
+  const newDate = prompt('请输入新日期 (格式: YYYY-MM-DD)');
+  if (newDate && !dates.includes(newDate)) {
+    try {
       const { error } = await supabase.from('dates').insert({ id: newDate });
-      if (!error) setDates([...dates, newDate]);
+      if (error) {
+        console.error('插入日期失败:', error);
+        alert('插入日期失败，请查看控制台日志');
+      } else {
+        setDates([...dates, newDate]);
+      }
+    } catch (err) {
+      console.error('插入日期时发生错误:', err);
+      alert('插入日期时发生错误，请查看控制台日志');
     }
-  };
+  }
+};
 
   const deleteDate = async (date) => {
     if (window.confirm(`确定要删除日期 ${date} 及其所有照片吗？`)) {
