@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
 
-// 替换为你自己的 Supabase 配置
-const supabaseUrl = 'https://hppsjmveutqmdsuvgrvb.supabase.co';
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhwcHNqbXZldXRxbWRzdXZncnZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEzMDYzNDksImV4cCI6MjA2Njg4MjM0OX0.-tl4hkGnALnLT0UlT7B1ImzMoiM17OFJYHzECKrR8zM';
+// 替换为你的 Supabase 配置
+const supabaseUrl = 'https://your-supabase-project-url.supabase.co ';
+const supabaseAnonKey = 'your-anon-key';
 
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 

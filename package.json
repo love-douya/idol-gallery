@@ -2,16 +2,11 @@
   "name": "idol-gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://love-douya.github.io/idol-gallery ",
   "dependencies": {
-    "@supabase/supabase-js": "^2.50.2",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@supabase/supabase-js": "^2.35.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,10 +17,7 @@
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -39,16 +31,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://love-douya.github.io/idol-gallery ",
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "gh-pages": "^6.3.0",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "gh-pages": "^4.0.0"
+  }
 }
