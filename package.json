@@ -2,11 +2,12 @@
   "name": "idol-gallery",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://love-douya.github.io/idol-gallery ",
+  "homepage": "https://love-douya.github.io/idol-gallery",
   "dependencies": {
+    "@supabase/supabase-js": "^2.35.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@supabase/supabase-js": "^2.35.0"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,6 +33,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^6.3.0"
   }
 }
