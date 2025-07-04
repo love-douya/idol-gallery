@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/idol-gallery/static/js/main.d3d844b3.js",
+    "main.js": "/idol-gallery/static/js/main.0c1ea463.js",
     "index.html": "/idol-gallery/index.html",
-    "main.d3d844b3.js.map": "/idol-gallery/static/js/main.d3d844b3.js.map"
+    "main.0c1ea463.js.map": "/idol-gallery/static/js/main.0c1ea463.js.map"
   },
   "entrypoints": [
-    "static/js/main.d3d844b3.js"
+    "static/js/main.0c1ea463.js"
   ]
 }
